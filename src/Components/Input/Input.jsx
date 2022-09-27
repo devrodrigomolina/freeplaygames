@@ -5,8 +5,8 @@ import { BiSearch } from 'react-icons/bi'
 const Input = () => {
   return (
     <InputContainer>
-      <BiSearch />
-      <input type='text' />
+      <BiSearch className='icon' />
+      <input type='text' placeholder='Digite algo para pesquisar'/>
     </InputContainer>
   )
 }
