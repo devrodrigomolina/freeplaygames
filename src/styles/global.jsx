@@ -31,3 +31,6 @@ export const GlobalStyle = createGlobalStyle`
 export const ContainerPages = styled.div`
   display: flex;
 `
+export const MainMiddle = styled(ContainerPages)`
+  flex-direction: column;
+`
