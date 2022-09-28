@@ -4,7 +4,7 @@ import { CarrosselContainer } from './style'
 const Carrossel = () => {
   return (
     <CarrosselContainer>
-   
+      
     </CarrosselContainer>
   )
 }
