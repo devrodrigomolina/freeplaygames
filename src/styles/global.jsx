@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import bg_gaming from '../assets/gaming-bg.png'
-import banner from '../assets/hero-1-1.jpg'
+
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -15,10 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(${banner});
-    background-position: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: auto !important;
