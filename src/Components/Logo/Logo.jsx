@@ -7,7 +7,7 @@ const Logo = () => {
     <LogoContainer>
       <MdGames className="logo"/>
       <LogoText>
-        FreePlay<span>Games</span>
+        FreePlay
       </LogoText>
     </LogoContainer>
   );

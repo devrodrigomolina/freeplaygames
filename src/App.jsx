@@ -5,8 +5,8 @@ import { GlobalStyle, ContainerPages, MainMiddle } from './styles/global'
 import Home from './Pages/Home/Home'
 import api from './api/api'
 import { useEffect, useState } from 'react';
-import CardsGames from './Components/CardsGames/CardsGames';
-
+import CardsRecents from './Components/Cards/CardsRecents/CardsRecents'
+import InfosCards from './Components/Cards/InfosCards/InfosCards';
 
 function App() {
   const [ data, setData ] = useState([])
@@ -24,12 +24,13 @@ function App() {
     <BrowserRouter>
       <Header />
       <ContainerPages>
-        <MenuBar />
+       {/*  <MenuBar /> */}
         <MainMiddle>
           <Routes>
             <Route path="/" element={<Home />}></Route>
           </Routes>
-          <CardsGames data={data} />
+          <InfosCards />
+          <CardsRecents data={data} />
         </MainMiddle>
       </ContainerPages>
       <GlobalStyle />

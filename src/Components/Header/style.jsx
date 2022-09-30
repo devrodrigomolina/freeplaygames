@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  width: 100vw;
-  padding-right: 20px;
+  width: 100%;
+  padding-right: 25px;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #353940;
-  border-bottom: 1px solid #78828B;
+  border-bottom: 1px solid gray;
+/*   backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+box-shadow: 0 18px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+
+ 
 `
 export const ContainerInfosUser = styled(HeaderContainer)`
   width: 770px;
-  border-bottom: 1px solid #78828B;
 `
