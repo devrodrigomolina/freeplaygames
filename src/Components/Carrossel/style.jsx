@@ -36,7 +36,7 @@ export const CarrosselContainer = styled.div`
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: scale-down;
 }
 

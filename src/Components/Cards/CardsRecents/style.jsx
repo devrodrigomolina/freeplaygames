@@ -1,12 +1,26 @@
 import styled from "styled-components";
+import bg_recents from '../../../assets/member-bg-1-1.jpg'
 
 export const CardsContainer = styled.div`
-  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: -150px;
   margin: 0 auto;
   border-radius: 5px;
+  background-color: #1C1121;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url(${bg_recents});
 `
 
 export const TitleInfosContainer = styled.div`
+width: 95%;
   height: 35px;
   display: flex;
   justify-content: space-between;
@@ -86,4 +100,23 @@ export const IconPlataform = styled(IconGenre)`
   right: 16px;
   `
 
-  
+export const ContainerTitle = styled.div`
+width: 400px;
+margin-bottom: 100px;
+font-family: 'Rajdhani', sans-serif;
+p {
+  margin-bottom: 20px;
+  color: #F1A11A;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+h2{
+  color: white;
+  font-size: 2.2rem;
+}
+h1{
+  color: #F1A11A;
+  margin-top: 10px;
+  font-size: 2.2rem;
+}
+`

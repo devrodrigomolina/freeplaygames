@@ -1,11 +1,14 @@
 import React from 'react'
 import Carrossel from '../../Components/Carrossel/Carrossel'
-import { HomeContainer } from './style'
+import { HomeContainer, Amarelo } from './style'
 
 const Home = () => {
   return (
     <HomeContainer>
       <Carrossel />
+      <Amarelo>
+
+      </Amarelo>
     </HomeContainer>
   )
 }

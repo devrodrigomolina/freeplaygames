@@ -9,12 +9,23 @@ import {
   IconGenre,
   IconPlataform,
   ContainerIcons,
+  ContainerTitle
 } from "./style";
 const CardsGames = ({ data }) => {
   const limitData = data.slice(0, 6); // QUANTIDADE DE ITENS A MOSTRAR
 
   return (
     <CardsContainer>
+
+
+      <ContainerTitle>
+        <p># Bem Vindo ao melhor site de jogos gratis</p>
+        <h2>O Melhor site de jogos</h2>
+        <h1>Do Planeta</h1>
+      </ContainerTitle>
+
+
+
       <TitleInfosContainer>
         <Title>Adicionados Recentemente</Title>
         <Link to="/">Ver mais..</Link>

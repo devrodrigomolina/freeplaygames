@@ -6,8 +6,6 @@ export const UserSection = styled.div`
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  border-left: 1px solid #78828B;
-  border-right: 1px solid #78828B;
 `
 
 export const UserCart = styled.div`
