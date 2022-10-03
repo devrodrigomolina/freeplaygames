@@ -95,10 +95,10 @@ export const IconGenre = styled.div`
   bottom: 13px;
   left: 16px;
   background-color: #131619;
-  `
+`
 export const IconPlataform = styled(IconGenre)`
   right: 16px;
-  `
+`
 
 export const ContainerTitle = styled.div`
 width: 400px;

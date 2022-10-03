@@ -13,8 +13,8 @@ export const UserCart = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 120px;
-  height: 55%;
-  background-color: #78828B;
+  height: 35%;
+  background-color: #f1a21a5a;
   border-radius: 8px;
   cursor: pointer;
   .icon {
