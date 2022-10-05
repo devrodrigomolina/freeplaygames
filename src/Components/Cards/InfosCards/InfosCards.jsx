@@ -11,42 +11,42 @@ const InfosCards = () => {
         <h1>Do Planeta</h1>
       </ContainerTitle>
       
-    <ContainerCards>
-      <Card>
-        <CardsTexts>
-          <IoGameController className="icon" />
-          <h4>JOGOS GRATUITOS</h4>
-          <h2>Gaming news</h2>
-          <p>Melhores jogos gratuitos para jogar com seus amigos</p>
-        </CardsTexts>
-      </Card>
-      <Card>
-        <CardsTexts>
-          <IoGameController className="icon" />
-          <h4>JOGOS GRATUITOS</h4>
-          <h2>Gaming news</h2>
-          <p>Melhores jogos gratuitos para jogar com seus amigos</p>
-        </CardsTexts>
-      </Card>
-      <Card>
-        <CardsTexts>
-          <IoGameController className="icon" />
-          <h4>JOGOS GRATUITOS</h4>
-          <h2>Gaming news</h2>
-          <p>Melhores jogos gratuitos para jogar com seus amigos</p>
-        </CardsTexts>
-      </Card>
-      <Card>
-        <CardsTexts>
-          <IoGameController className="icon" />
-          <h4>JOGOS GRATUITOS</h4>
-          <h2>Gaming news</h2>
-          <p>Melhores jogos gratuitos para jogar com seus amigos</p>
-        </CardsTexts>
-      </Card>
-     
+      <ContainerCards>
+        <Card>
+          <CardsTexts>
+            <IoGameController className="icon" />
+            <h4>JOGOS GRATUITOS</h4>
+            <h2>Gaming news</h2>
+            <p>Melhores jogos gratuitos para jogar com seus amigos</p>
+          </CardsTexts>
+        </Card>
+        <Card>
+          <CardsTexts>
+            <IoGameController className="icon" />
+            <h4>JOGOS GRATUITOS</h4>
+            <h2>Gaming news</h2>
+            <p>Melhores jogos gratuitos para jogar com seus amigos</p>
+          </CardsTexts>
+        </Card>
+        <Card>
+          <CardsTexts>
+            <IoGameController className="icon" />
+            <h4>JOGOS GRATUITOS</h4>
+            <h2>Gaming news</h2>
+            <p>Melhores jogos gratuitos para jogar com seus amigos</p>
+          </CardsTexts>
+        </Card>
+        <Card>
+          <CardsTexts>
+            <IoGameController className="icon" />
+            <h4>JOGOS GRATUITOS</h4>
+            <h2>Gaming news</h2>
+            <p>Melhores jogos gratuitos para jogar com seus amigos</p>
+          </CardsTexts>
+        </Card>
+      
 
-    </ContainerCards>
+      </ContainerCards>
     </ContainerGeralCards>
   );
 };

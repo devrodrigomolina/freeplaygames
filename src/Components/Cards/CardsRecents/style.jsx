@@ -9,7 +9,6 @@ export const CardsContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   position: relative;
-  top: -150px;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #1C1121;
@@ -20,7 +19,7 @@ export const CardsContainer = styled.div`
 `
 
 export const TitleInfosContainer = styled.div`
-width: 95%;
+  width: 95%;
   height: 35px;
   display: flex;
   justify-content: space-between;

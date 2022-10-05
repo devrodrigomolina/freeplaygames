@@ -5,7 +5,7 @@ export const InputContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 350px;
+  width: 650px;
   height: 50px;
   .icon {
     position: absolute;

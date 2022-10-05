@@ -7,37 +7,29 @@ import api from "./api/api";
 import { useEffect, useState } from "react";
 import CardsRecents from "./Components/Cards/CardsRecents/CardsRecents";
 import InfosCards from "./Components/Cards/InfosCards/InfosCards";
-
-
-
+import Games from "./Pages/Games/Games";
+import GamesProvider from "./context/GamesContext";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-  const [data, setData] = useState([]);
-
-  const getGames = async () => {
-    const { data: json } = await api.get(`/games?${"sort-by=release-date"}`);
-    setData(json);
-  };  
-  
-
-  useEffect(() => {
-    getGames();
-  }, []);
-
   return (
     <BrowserRouter>
-      <Header />
-      <ContainerPages>
-        {/*  <MenuBar /> */}
-        <MainMiddle>
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-          </Routes>
-          <InfosCards />
-          <CardsRecents data={data} />
-        </MainMiddle>
-      </ContainerPages>
-      <GlobalStyle />
+      <GamesProvider>
+
+        <Header />
+        <ContainerPages>
+          {/*  <MenuBar /> */}
+          <MainMiddle>
+            <Routes>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/jogos" element={<Games />}></Route>
+            </Routes>
+          <Footer />
+          </MainMiddle>
+        </ContainerPages>
+        <GlobalStyle />
+      </GamesProvider>
+
     </BrowserRouter>
   );
 }

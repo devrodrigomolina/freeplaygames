@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Carrossel from '../../Components/Carrossel/Carrossel'
 import { HomeContainer, Amarelo } from './style'
+import InfosCards from '../../Components/Cards/InfosCards/InfosCards'
+import CardsRecents from '../../Components/Cards/CardsRecents/CardsRecents'
 
 const Home = () => {
-  return (
-    <HomeContainer>
-      <Carrossel />
-      <Amarelo>
 
-      </Amarelo>
-    </HomeContainer>
+  return (
+    <>
+      <HomeContainer>
+        <Carrossel />
+        <Amarelo/>
+      </HomeContainer>
+      <InfosCards />
+      <CardsRecents cardQtd={6} />
+    </>
   )
 }
 

@@ -15,9 +15,9 @@ const Header = () => {
 
         <LinksMenu>
           <Link to='/'>Home</Link>
-          <Link>Jogos</Link>
-          <Link>Lançamentos</Link>
-          <Link>Noticias</Link>
+          <Link to='/jogos'>Jogos</Link>
+          <Link to='/lancamentos'>Lançamentos</Link>
+          <Link to='/noticias'>Noticias</Link>
         </LinksMenu>
         <div style={{display: 'flex'}}>
 

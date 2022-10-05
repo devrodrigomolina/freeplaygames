@@ -5,16 +5,17 @@ export const ContainerCards = styled.div`
   width: 100vw;
   max-width: 90vw;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-attachment: fixed;
   position: relative;
-  top: -150px;
+/*   top: -150px; */
   z-index: -1;
   background-image: url(${bg_features});
   background-color: #1C1C1C;
+
   `
 
 export const Card = styled.div`
