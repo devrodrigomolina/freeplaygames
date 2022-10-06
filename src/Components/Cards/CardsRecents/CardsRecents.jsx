@@ -1,19 +1,17 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { GamesContext } from "../../../context/GamesContext";
+import IconsPlataform from "../../IconsPlataform/IconsPlataform";
 import {
   CardsContainer,
   Title,
   CardsItens,
   Card,
   TitleInfosContainer,
-  IconGenre,
-  IconPlataform,
-  ContainerIcons,
   ContainerTitle
 } from "./style";
-const CardsGames = ({cardQtd}) => {
 
+const CardsGames = ({cardQtd}) => {
   const { data } = useContext(GamesContext)
   const limitData = data.slice(0, cardQtd); // QUANTIDADE DE ITENS A MOSTRAR
 
@@ -34,10 +32,7 @@ const CardsGames = ({cardQtd}) => {
             <Title>{games.title}</Title>
             <p>{games.short_description}</p>
             <img src={games.thumbnail} />
-            <ContainerIcons>
-              <IconGenre>{games.genre}</IconGenre>
-              <IconPlataform>{games.platform}</IconPlataform>
-            </ContainerIcons>
+            <IconsPlataform genre={games.genre} plataform={games.platform}/>
           </Card>
         ))}
       </CardsItens>
