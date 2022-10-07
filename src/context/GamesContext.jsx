@@ -6,26 +6,25 @@ export const GamesContext = createContext()
 
 const GamesProvider = (props) => {
   const [data, setData] = useState([]);
-  const [params, setParams] = useState({
-    platform: '',
-    genre: ''
-  })
+  const [plataform, setPlataform] = useState('')
+  const [genere, setGenere] = useState('')
+  const [sort, setSort] = useState('')
   const [loading, setLoading] = useState(false)
 
   const getGames = async () => {
     setLoading(true)
-    const { data: json } = await api.get(`/games?${params.platform}`);
+    const { data: json } = await api.get(`/games?${sort}${plataform}${genere}`);
     setData(json);
     setLoading(false)
-  };  
-  
+  };
+
+
   useEffect(() => {
-    console.log(params)
     getGames();
-  }, [params])
+  }, [plataform, genere, sort])
 
   return (
-    <GamesContext.Provider value={{data, setData, params, setParams, loading}}>
+    <GamesContext.Provider value={{data, setData, plataform, setPlataform, genere, setGenere, sort, setSort, loading}}>
       {props.children}
     </GamesContext.Provider>
   )
