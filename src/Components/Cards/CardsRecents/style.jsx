@@ -3,7 +3,7 @@ import bg_recents from '../../../assets/member-bg-1-1.jpg'
 
 export const CardsContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh + 200px);
   display: flex;
   align-items: center;
   justify-content: center;

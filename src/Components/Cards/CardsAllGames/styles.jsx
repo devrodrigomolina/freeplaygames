@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const ContainerAllGames = styled.div`
+  width: 100vw;
+  max-width: 90vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 30px;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 80px auto;
 `
 export const ContainerFilterArea = styled.div`
   width: 100%;
@@ -25,7 +27,7 @@ export const ContainerFilterArea = styled.div`
 `
 
 export const CardGame = styled.div`
- width: 280px;
+  width: 280px;
   height: 320px;
   padding: 10px;
   margin-top: 20px;

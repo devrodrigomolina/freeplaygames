@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <GamesProvider>
-
         <Header />
         <ContainerPages>
           <MainMiddle>
@@ -20,7 +19,7 @@ function App() {
               <Route path="/" element={<Home />}></Route>
               <Route path="/jogos" element={<Games />}></Route>
             </Routes>
-          <Footer />
+            <Footer />
           </MainMiddle>
         </ContainerPages>
         <GlobalStyle />

@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const ContainerPages = styled.div`
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
 `
 export const MainMiddle = styled(ContainerPages)`
   flex-direction: column;

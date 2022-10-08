@@ -14,7 +14,7 @@ export const UserCart = styled.div`
   justify-content: space-around;
   width: 120px;
   height: 35%;
-  background-color: #F1A11A;
+  /* background-color: #F1A11A; */
   border-radius: 8px;
   cursor: pointer;
   .icon {
