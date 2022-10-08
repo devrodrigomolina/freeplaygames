@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { InputContainer } from './style'
 import { BiSearch } from 'react-icons/bi'
+import { GamesContext } from '../../context/GamesContext'
 
 const Input = () => {
-  const [search, setSearch] = useState('')
+  
+  const { search, setSearch } = useContext(GamesContext)
 
   return (
     <InputContainer>
