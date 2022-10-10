@@ -9,7 +9,8 @@ import {
 import Input from "../../Input/Input";
 import Loading from "../../Loading/Loading";
 import IconsPlataform from "../../IconsPlataform/IconsPlataform";
-import api from "../../../api/api";
+import { games }from "../../../api/api";
+import Error from "../../Error/Error";
 
 const CardsAllGames = () => {
   const {
@@ -22,11 +23,17 @@ const CardsAllGames = () => {
     data,
     loading,
     search,
+    error,
+    setError
   } = useContext(GamesContext);
 
   const openDetailGame = async (gameId) => {
-    const { data: json } = await api.get(`/game?id=${gameId}`);
-    window.open(json.game_url);
+    try {
+      const { data: json } = await games.get(`/game?id=${gameId}`);
+      window.open(json.game_url);
+    }catch (err) {
+      setError(err.message)
+    }
   };
 
   const findTitle = data.filter((test) =>
@@ -71,9 +78,10 @@ const CardsAllGames = () => {
           <option value="sort-by=relevance">Relevância</option>
         </select>
       </ContainerFilterArea>
+      {error != null && <Error error={error}/>}
       {loading ? (
         <Loading />
-      ) : (
+        ) : (
         <ContainerAllGames>
           {findTitle.map((games, index) => (
             <CardGame key={index} onClick={() => openDetailGame(games.id)}>
