@@ -5,10 +5,9 @@ import Home from "./Pages/Home/Home";
 import Games from "./Pages/Games/Games";
 import GamesProvider from "./context/GamesContext";
 import Footer from "./Components/Footer/Footer";
+import Noticies from "./Pages/Noticies/Noticies";
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <GamesProvider>
@@ -18,6 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/jogos" element={<Games />}></Route>
+              <Route path="/noticias" element={<Noticies />}></Route>
             </Routes>
             <Footer />
           </MainMiddle>
