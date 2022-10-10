@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import api from "../api/api";
+import { games } from "../api/api";
 
 export const GamesContext = createContext();
 
@@ -11,10 +10,11 @@ const GamesProvider = (props) => {
   const [sort, setSort] = useState("");
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const [error, setError] = useState(null);
+  
   const getGames = async () => {
     setLoading(true);
-    const { data: json } = await api.get(`/games?${sort}${plataform}${genere}`);
+    const { data: json } = await games.get(`/games?${sort}${plataform}${genere}`);
     setData(json);
     setLoading(false);
   };
@@ -37,6 +37,9 @@ const GamesProvider = (props) => {
         search,
         setSearch,
         loading,
+        setLoading,
+        error,
+        setError
       }}
     >
       {props.children}
