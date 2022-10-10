@@ -8,15 +8,18 @@ export const ContainerNoticies = styled.div`
 `
 export const CardsNoticies = styled.div`
   width: 100%;
-  height: 200px;
+  height: 160px;
   display: flex;
   margin-bottom: 20px;
   border: 1px solid white;
   cursor: pointer;
-  img {
+  .img_container {
     width: 380px;
-    height: 100%;
-    object-fit: contain;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   `
 export const InfosNoticies = styled.div`
