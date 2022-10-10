@@ -29,7 +29,9 @@ const Noticies = () => {
     <ContainerNoticies>
       {newsNoticies.map(({ title, date, description, image, link}) => (
         <CardsNoticies onClick={() => openNoticie(link)}>
-          <img src={image} alt="" />
+          <div className="img_container">
+            <img src={image} alt="" />
+          </div>
           <InfosNoticies>
             <h3>{title} | <span>{date}</span></h3>
             <p>{description}</p>
