@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <HomeContainer>
-        <Carrossel />
         <Amarelo/>
+        <Carrossel />
       </HomeContainer>
       <InfosCards />
       <CardsRecents cardQtd={6} />
