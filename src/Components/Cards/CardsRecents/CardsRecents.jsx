@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { games } from "../../../api/api";
 import { GamesContext } from "../../../context/GamesContext";
+import useFetch from "../../Hooks/useFetch";
 import IconsPlataform from "../../IconsPlataform/IconsPlataform";
 import {
   CardsContainer,
@@ -13,6 +15,8 @@ import {
 
 const CardsGames = ({cardQtd}) => {
   const { data } = useContext(GamesContext)
+  const {openDetailGame} = useFetch(`/game?id=`, games)
+
   const limitData = data.slice(0, cardQtd); // QUANTIDADE DE ITENS A MOSTRAR
 
   return (
@@ -24,11 +28,11 @@ const CardsGames = ({cardQtd}) => {
       </ContainerTitle>
       <TitleInfosContainer>
         <Title>Adicionados Recentemente</Title>
-        <Link to="/">Ver mais..</Link>
+        <Link to="/jogos">Ver mais..</Link>
       </TitleInfosContainer>
       <CardsItens>
         {limitData.map((games, index) => (
-          <Card key={index}>
+          <Card onClick={() => openDetailGame(games.id)} key={index}>
             <Title>{games.title}</Title>
             <p>{games.short_description}</p>
             <img src={games.thumbnail} />
