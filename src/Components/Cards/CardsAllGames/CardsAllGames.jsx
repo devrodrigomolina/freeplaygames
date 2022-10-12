@@ -11,6 +11,7 @@ import Loading from "../../Loading/Loading";
 import IconsPlataform from "../../IconsPlataform/IconsPlataform";
 import { games }from "../../../api/api";
 import Error from "../../Error/Error";
+import useFetch from "../../Hooks/useFetch";
 
 const CardsAllGames = () => {
   const {
@@ -26,15 +27,8 @@ const CardsAllGames = () => {
     error,
     setError
   } = useContext(GamesContext);
-
-  const openDetailGame = async (gameId) => {
-    try {
-      const { data: json } = await games.get(`/game?id=${gameId}`);
-      window.open(json.game_url);
-    }catch (err) {
-      setError(err.message)
-    }
-  };
+  
+  const {openDetailGame} = useFetch(`/game?id=`, games)
 
   const findTitle = data.filter((test) =>
     test.title.toLowerCase().includes(search.toLowerCase())
