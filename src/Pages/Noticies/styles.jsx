@@ -11,7 +11,7 @@ export const CardsNoticies = styled.div`
   height: 160px;
   display: flex;
   margin-bottom: 20px;
-  border: 1px solid white;
+  border: 1px solid #fafafa90;
   cursor: pointer;
   .img_container {
     width: 380px;
