@@ -6,6 +6,7 @@ import Games from "./Pages/Games/Games";
 import GamesProvider from "./context/GamesContext";
 import Footer from "./Components/Footer/Footer";
 import Noticies from "./Pages/Noticies/Noticies";
+import Releases from "./Pages/Releases/Releases";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/jogos" element={<Games />}></Route>
+              <Route path="/lancamentos" element={<Releases />}></Route>
               <Route path="/noticias" element={<Noticies />}></Route>
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
           </MainMiddle>
         </ContainerPages>
         <GlobalStyle />
