@@ -3,7 +3,7 @@ import banner from '../../assets/hero-1-1.jpg'
 
 export const HomeContainer = styled.div`
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: url(${banner});
   background-size: cover;
   background-position: center;
@@ -15,15 +15,10 @@ export const HomeContainer = styled.div`
 `
 export const Amarelo = styled.div`
   width: 100vw;
-  height: 90vh;
-  position: relative;
+  height: 100vh;
+  position: absolute;
   z-index: 1;
-  top: 76%;
-  left: -16%;
-  -webkit-clip-path: polygon(31% -44%,95% 25%,100% calc(100% - 250px),101% 113%,15% calc(78% - 230px));
-  clip-path: polygon(31% -44%,95% 25%,100% calc(100% - 250px),101% 113%,15% calc(78% - 230px));
-  
+  top: 0;
   background-color: yellow;
-  transform: skew(70deg);
-  
+  clip-path: polygon(0% 0%,100% 0,-570% calc(-219% - 240px),50% 100%,0 calc(105% - 150px))
 `

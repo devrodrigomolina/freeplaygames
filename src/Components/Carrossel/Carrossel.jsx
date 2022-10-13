@@ -14,7 +14,7 @@ const Carrossel = () => {
 
   return (
     <CarrosselContainer>
-{/*       <h1 style={{width: '850px',margin: '190px', color: 'white', fontSize: '7rem', letterSpacing: '10px'}}>WELCOME TO <span style={{color: '#FEBF10'}}>FREEPLAY</span> GAMING ZONE.</h1> */}
+      <h1>WELCOME TO <span style={{color: '#FEBF10'}}>FREEPLAY</span> GAMING ZONE.</h1>
     </CarrosselContainer>
   )
 }
